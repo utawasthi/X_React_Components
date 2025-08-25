@@ -130,10 +130,10 @@ function DropDown() {
                     {
                       typeof item === "object" ? (
                         <>
-                          <span className = 'text-white/80'>
+                          <span className = 'text-white/80 cursor-pointer'>
                             {item.label}
                           </span>
-                          <span className = 'text-gray-200 text-sm'> <CaretRight/> </span>
+                          <span className = 'text-gray-200 text-sm cursor-pointer'> <CaretRight/> </span>
                         </>
                       ) : (
                         item
