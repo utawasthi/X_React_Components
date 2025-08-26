@@ -3,6 +3,7 @@ import Btn from "./components/Button"
 import DDMenu from "./components/DropDown"
 import Modal from "./components/Modal"
 import Tabs from "./components/Tabs"
+import TooltipPar from "./components/Tooltip"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Tabs/>
       <DDMenu/>
       <Accordion/>
+      <TooltipPar/>
     </div>
   )
 }
