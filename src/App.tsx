@@ -4,8 +4,8 @@ import DDMenu from "./components/DropDown"
 import Modal from "./components/Modal"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
 import Tabs from "./components/Tabs"
+import ToastPar from "./components/Toasts"
 import TooltipPar from "./components/Tooltip"
-
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Accordion/>
       <TooltipPar/>
       <SearchAutoComplete/>
+      <ToastPar/>
     </div>
   )
 }
