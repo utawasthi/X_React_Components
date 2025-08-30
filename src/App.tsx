@@ -1,5 +1,6 @@
 import Accordion from "./components/Accordion"
 import Btn from "./components/Button"
+import CheckboxAndRadio from "./components/custom-checkbox-radio-group"
 import DDMenu from "./components/DropDown"
 import Modal from "./components/Modal"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
@@ -18,6 +19,7 @@ function App() {
       <TooltipPar/>
       <SearchAutoComplete/>
       <ToastPar/>
+      <CheckboxAndRadio/>
     </div>
   )
 }
