@@ -4,6 +4,7 @@ import CheckboxAndRadio from "./components/custom-checkbox-radio-group"
 import DatePicker from "./components/date-picker/DatePicker"
 import DDMenu from "./components/DropDown"
 import Modal from "./components/Modal"
+import MultiSelectDropDownPar from "./components/multi-select-dropdown"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
 import Tabs from "./components/Tabs"
 import ToastPar from "./components/Toasts"
@@ -22,6 +23,7 @@ function App() {
       <ToastPar/>
       <CheckboxAndRadio/>
       <DatePicker/>
+      <MultiSelectDropDownPar/>
     </div>
   )
 }
