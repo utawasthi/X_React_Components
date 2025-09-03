@@ -6,6 +6,7 @@ import DDMenu from "./components/DropDown"
 import FileUpload from "./components/file-upload"
 import Modal from "./components/Modal"
 import MultiSelectDropDownPar from "./components/multi-select-dropdown"
+import Password from "./components/password"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
 import Tabs from "./components/Tabs"
 import ToastPar from "./components/Toasts"
@@ -26,6 +27,7 @@ function App() {
       <DatePicker/>
       <MultiSelectDropDownPar/>
       <FileUpload/>
+      <Password/>
     </div>
   )
 }
