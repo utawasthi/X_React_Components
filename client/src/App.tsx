@@ -3,6 +3,7 @@ import Btn from "./components/Button"
 import CheckboxAndRadio from "./components/custom-checkbox-radio-group"
 import DatePicker from "./components/date-picker/DatePicker"
 import DDMenu from "./components/DropDown"
+import FileUpload from "./components/file-upload"
 import Modal from "./components/Modal"
 import MultiSelectDropDownPar from "./components/multi-select-dropdown"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
@@ -24,6 +25,7 @@ function App() {
       <CheckboxAndRadio/>
       <DatePicker/>
       <MultiSelectDropDownPar/>
+      <FileUpload/>
     </div>
   )
 }
