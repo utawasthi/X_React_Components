@@ -4,6 +4,7 @@ import CheckboxAndRadio from "./components/custom-checkbox-radio-group"
 import DatePicker from "./components/date-picker/DatePicker"
 import DDMenu from "./components/DropDown"
 import FileUpload from "./components/file-upload"
+import FormValidation from "./components/form-validation"
 import Modal from "./components/Modal"
 import MultiSelectDropDownPar from "./components/multi-select-dropdown"
 import Password from "./components/password"
@@ -28,6 +29,7 @@ function App() {
       <MultiSelectDropDownPar/>
       <FileUpload/>
       <Password/>
+      <FormValidation/>
     </div>
   )
 }
