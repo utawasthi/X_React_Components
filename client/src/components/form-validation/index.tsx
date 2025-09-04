@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import z from "zod"
 
@@ -19,9 +20,12 @@ function FormValidation() {
     handleSubmit , 
     formState : {errors , isSubmitting}
   } = useForm<SignupFormValues>({resolver : zodResolver(signupSchema)});
+
+   const [isSubmitted , setIsSubmitted] = useState<boolean>(false);
   
    const onSubmit = (data : SignupFormValues) => {
     console.log("Form submitted" , data);
+    setIsSubmitted(true);
    }
 
   return (
@@ -65,7 +69,9 @@ function FormValidation() {
               className="px-4 py-3 focus:outline-none rounded-3xl bg-gray-700 text-white"
             />
             {errors.email && (
-              <p className="text-red-400 text-sm">{errors.email.message}</p>
+              <p className="text-red-400 text-sm">
+                {errors.email.message}
+              </p>
             )}
           </div>
         </div>
@@ -74,24 +80,34 @@ function FormValidation() {
          <div className = 'w-[80%] flex flex-col gap-2 justify-center'>
             <label className="block text-sm text-white">Password</label>
             <input
-              type="password"
+              type = "password"
               placeholder = "Password"
               {...register("password")}
-              className="px-4 py-3 focus:outline-none rounded-3xl bg-gray-700 text-white"
+              className = "px-4 py-3 focus:outline-none rounded-3xl bg-gray-700 text-white"
             />
             {errors.password && (
-              <p className="text-red-400 text-sm">{errors.password.message}</p>
+              <p className = "text-red-400 text-sm">
+                {errors.password.message}
+              </p>
             )}
           </div>
        </div>
-        <div className = 'flex justify-center items-center'>
+        <div className = 'flex flex-col gap-6 justify-center items-center'>
           <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-violet-700 text-white px-4 py-2 rounded-3xl hover:bg-violet-600 disabled:opacity-50 w-[50%] cursor-pointer"
+            type = "submit"
+            disabled = {isSubmitting}
+            className = "bg-violet-700 text-white px-4 py-2 rounded-3xl hover:bg-violet-600 disabled:opacity-50 w-[50%] cursor-pointer"
           >
             {isSubmitting ? "Submitting..." : "Sign Up"}
           </button>
+          <div>
+            {
+              isSubmitted && 
+              <h2 className = 'text-green-500 mt-3 tracking-wide'>
+                ✅ Form Submitted Successfully
+              </h2>
+            }
+          </div>
         </div>
       </form>
     </div>
