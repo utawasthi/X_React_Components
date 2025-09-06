@@ -7,6 +7,7 @@ import FileUpload from "./components/file-upload"
 import FormValidation from "./components/form-validation"
 import Modal from "./components/Modal"
 import MultiSelectDropDownPar from "./components/multi-select-dropdown"
+import PaginationPar from "./components/pagination"
 import Password from "./components/password"
 import SearchAutoComplete from "./components/Search-Auto-Complete-With-API/SearchAutoComplete"
 import Tabs from "./components/Tabs"
@@ -30,6 +31,7 @@ function App() {
       <FileUpload/>
       <Password/>
       <FormValidation/>
+      <PaginationPar/>
     </div>
   )
 }
