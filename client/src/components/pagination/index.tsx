@@ -41,7 +41,7 @@ function PaginationPar() {
   const totalPages = Math.ceil(totalProducts / limit);
 
   return (
-    <div className = 'h-screen bg-black text-white p-6 space-y-4'>
+    <div className = 'h-100vh bg-black text-white p-6 space-y-4'>
       <h2 className = 'text-4xl text-center text-cyan-500'>
         Pagination Component
       </h2>
