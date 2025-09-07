@@ -5,6 +5,7 @@ import DatePicker from "./components/date-picker/DatePicker"
 import DDMenu from "./components/DropDown"
 import FileUpload from "./components/file-upload"
 import FormValidation from "./components/form-validation"
+import InfiniteScroll from "./components/infinite-scroll"
 import Modal from "./components/Modal"
 import MultiSelectDropDownPar from "./components/multi-select-dropdown"
 import MultiStepForm from "./components/multi-step-form"
@@ -34,6 +35,7 @@ function App() {
       <FormValidation/>
       <PaginationPar/>
       <MultiStepForm />
+      <InfiniteScroll/>
     </div>
   )
 }
